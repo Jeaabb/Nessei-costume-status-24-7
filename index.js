@@ -11,5 +11,7 @@ traits.forEach(file => {
   client.on(traitname, event.bind(null,  client));
 });
 
-require("./server.js")();
+const keepAlive = require("./server.js");
+
+keepAlive();
 client.login(process.env.token);
