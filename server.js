@@ -6,7 +6,9 @@ server.all('/', (req, res) => {
 });
 
 function keepAlive(){
-  server.listen(3000, ()=>{console.log("READY")});
+  server.listen(3000, () => {
+    console.log("READY");
+  });
 };
 
 module.exports = keepAlive;
