@@ -5,7 +5,7 @@ const config = require(".././config.json")
 module.exports = async (client) => {
   let large = await rpc.getRpcImage(config.applicationid, config.imagename);
   let small = await rpc.getRpcImage(config.application, config.small);
-  let presence = new rpc.Rpc();
+  let presence = new rpc.Rpc()
   .setName(config.name)
   .setUrl('https://www.twitch.tv/Nobuyak1')
   .setType(config.type)
